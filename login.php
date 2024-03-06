@@ -27,24 +27,38 @@ if (isset($_POST["submit"])) {
 
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Log In</title>
+    <link rel="icon" href="logo (2).png">
     <link href="./css/style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
-</head>
-<body>
-<form class="" action="" method="post" autocomplete="off">
-        <label for="usernameemail"> Username or Email </label>
-        <input type="text" name="usernameemail" id="usernameemail" required value=""> <br>
-
-        <label for="password"> Password </label>
-        <input type="password" name="password" id="password" required value=""> <br>
-
-        <button type="submit" name="submit">Login</button>
-</form>
-<br>
-<a href="register.php">Registration</a>
-</body>
+  </head>
+  <body class="login">
+    <div class="back">
+      
+    <div class="center">
+      <h1>Login</h1>
+      <form action="login.php" method="post" class="loginForm">
+        <div class="txt_field">
+          <input type="text" name="usernameemail" id="username" class="input" required>
+          <span class="error-message"></span>
+          <label for="username" class="label">Username or Email</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" name="password" id="password" class="input" required>
+          <span class="error-message"></span>
+          <label for="password" class="label">Password</label>
+        </div>
+        
+        <input type="submit" name="submit" value="Login">
+        <div class="signup_link">
+          Not a member? <a href="signup.html">Signup</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script type="text/javascript" src="login.js"></script>    
+  </body>
 </html>
+
