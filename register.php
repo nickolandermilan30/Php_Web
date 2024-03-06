@@ -32,27 +32,54 @@ if (isset($_POST["submit"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
 </head>
-<body>
-    <h2>Register here</h2>
-    <form class="" action="" method="post" autocomplete="off">
-        <label for="name"> Name : </label>
-        <input type="text" name="name" id="name" required value=""> <br>
- 
-        <label for="username"> Username : </label>
-        <input type="text" name="username" id="username" required value=""> <br>
- 
-        <label for="email"> Email : </label>
-        <input type="email" name="email" id="email" required value=""> <br>
- 
-        <label for="password"> Password : </label>
-        <input type="password" name="password" id="password" required value=""> <br>
- 
-        <label for="confirmpassword"> Confirm password : </label>
-        <input type="password" name="confirmpassword" id="confirmpassword" required value=""> <br>
+<body class="login">
+    
+    <div class="back">
+      
+    <div class="center">
+      <h1>Login</h1>
 
-        <button type="submit" name="submit">Register</button>
-    </form>
-    <br>
-    <a href="login.php">login</a>
-</body>
+
+      <form class="" action="" method="post" autocomplete="off">
+
+        <div class="txt_field">
+        <input type="text" name="name" id="name" required value=""> <br>
+          <span class="error-message"></span>
+          <label for="name"> Name : </label>
+        </div>
+
+
+        <div class="txt_field">
+        <input type="text" name="username" id="username" required value=""> <br>
+          <span class="error-message"></span>
+          <label for="username"> Username : </label>
+        </div>
+
+        <div class="txt_field">
+        <input type="email" name="email" id="email" required value=""> <br>
+          <span class="error-message"></span>
+          <label for="email"> Email : </label>
+        </div>
+        
+        <div class="txt_field">
+        <input type="password" name="password" id="password" required value=""> <br>
+          <span class="error-message"></span>
+          <label for="password"> Password : </label>
+        </div>
+
+        <div class="txt_field">
+        <input type="password" name="confirmpassword" id="confirmpassword" required value=""> <br>
+          <span class="error-message"></span>
+          <label for="confirmpassword"> Confirm password : </label>
+        </div>
+        
+        <input type="submit" name="submit" value="Register">
+        <div class="signup_link">
+          Already have account? <a href="login.php">Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script type="text/javascript" src="login.js"></script>    
+  </body>
 </html>

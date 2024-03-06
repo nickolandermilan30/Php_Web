@@ -43,7 +43,7 @@ if (isset($_POST["submit"])) {
         <div class="txt_field">
           <input type="text" name="usernameemail" id="username" class="input" required>
           <span class="error-message"></span>
-          <label for="username" class="label">Username or Email</label>
+          <label for="usernameemail" class="label">Username or Email</label>
         </div>
         <div class="txt_field">
           <input type="password" name="password" id="password" class="input" required>
@@ -51,9 +51,10 @@ if (isset($_POST["submit"])) {
           <label for="password" class="label">Password</label>
         </div>
         
+        
         <input type="submit" name="submit" value="Login">
         <div class="signup_link">
-          Not a member? <a href="signup.html">Signup</a>
+          Not a member? <a href="register.php">Signup</a>
         </div>
       </form>
     </div>
